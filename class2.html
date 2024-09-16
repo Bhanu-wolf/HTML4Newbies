@@ -20,6 +20,49 @@
         <li>Third step</li>
     </ol>
 
+    Ordered List Styles:
+
+        Numbers (1, 2, 3, ...) (default):
+
+        This is the default style, where the items are numbered sequentially with numbers.
+        Uppercase Letters (A, B, C, ...):
+
+        Each item is marked with an uppercase letter.
+        Lowercase Letters (a, b, c, ...):
+
+        Each item is marked with a lowercase letter.
+        Uppercase Roman Numerals (I, II, III, ...):
+
+        Each item is marked with an uppercase Roman numeral.
+        Lowercase Roman Numerals (i, ii, iii, ...):
+
+        Each item is marked with a lowercase Roman numeral.
+
+        ##example 
+
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        you can also Start an Ordered List from a Specific Number or Letter in HTML
+
+         <h2>Starting from Letter 'C':</h2>
+                <ol type="A" start="3">
+                    <li>Item C</li>
+                    <li>Item D</li>
+                    <li>Item E</li>
+                </ol>
+
+    Starting from a Specific Lowercase Letter
+            <h2>Starting from Letter 'd':</h2>
+            <ol type="a" start="4">
+                <li>Item d</li>
+                <li>Item e</li>
+                <li>Item f</li>
+            </ol>
+
     2. Image Tag (<img>)
 
     ## What is the tag?
@@ -41,9 +84,11 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Favorite Animal</title>
 </head>
+
 <body>
 
     <!-- Main Heading -->
@@ -53,7 +98,8 @@
     <img src="elephant.webp" alt="An elephant in the wild">
 
     <!-- Introduction Paragraph -->
-    <p>Elephants are one of the largest land animals on Earth. They are known for their intelligence, long trunks, and strong social bonds.</p>
+    <p>Elephants are one of the largest land animals on Earth. They are known for their intelligence, long trunks, and
+        strong social bonds.</p>
 
     <!-- Subheading: Fun Facts -->
     <h2>Fun Facts About Elephants</h2>
@@ -74,5 +120,29 @@
         <li>They play an important role in maintaining ecosystems.</li>
     </ol>
 
+    <!-- Starting from a Specific Uppercase Letter -->
+    <h2>Starting from Letter 'C':</h2>
+    <ol type="A" start="3">
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+    </ol>
+
+    <!-- Starting from a Specific Lowercase Letter -->
+    <h2>Starting from Letter 'd':</h2>
+    <ol type="a" start="4">
+        <li>Item d</li>
+        <li>Item e</li>
+        <li>Item f</li>
+    </ol>
+
+    <!-- Starting from a Specific Roman Numeral -->
+    <h2>Starting from Roman Numeral 'IV':</h2>
+    <ol type="I" start="4">
+        <li>Item IV</li>
+        <li>Item V</li>
+        <li>Item VI</li>
+    </ol>
 </body>
+
 </html>
