@@ -1,0 +1,110 @@
+<!-- 1. <table> -->
+<!-- 
+    The <table> tag is used to create a table.
+    This is the main container for all other table elements.
+-->
+
+<!-- 2. <tr> -->
+<!-- 
+    The <tr> tag defines a row in the table (Table Row).
+    Each <tr> represents a horizontal row in the table.
+-->
+
+<!-- 3. <th> -->
+<!-- 
+    The <th> tag defines a header cell in a table (Table Header).
+    Header cells are bold and centered by default.
+    They are typically used in the first row to define headings for columns.
+-->
+
+<!-- 4. <td> -->
+<!-- 
+    The <td> tag defines a standard data cell (Table Data).
+    Data cells hold the actual content in the table, such as text or images.
+-->
+
+<!-- 5. <caption> -->
+<!-- 
+    The <caption> tag adds a title or label to the table.
+    It is displayed at the top of the table, providing context or description for the table.
+-->
+
+<!-- 6. <colspan> -->
+<!-- 
+    The colspan attribute allows a cell to span multiple columns.
+    It merges adjacent columns into one cell.
+    Use this when you want a single cell to stretch across multiple columns.
+-->
+
+<!-- 7. <rowspan> -->
+<!-- 
+    The rowspan attribute allows a cell to span multiple rows.
+    It merges adjacent rows into one cell.
+    Use this when you want a single cell to stretch across multiple rows.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1">
+        <caption>Student Grades</caption> <!-- Table caption -->
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Math</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Science</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <!-- Example with colspan: -->
+<br><br>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Details</th> <!-- Spans across 2 columns -->
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Age: 14</td>
+            <td>Grade: A</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <!-- Example with rowspan: -->
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Alice</td> <!-- Spans across 2 rows -->
+            <td>14</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

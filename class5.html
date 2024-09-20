@@ -1,0 +1,88 @@
+<!-- 1. <form> -->
+<!-- 
+    The <form> tag is used to create a form for user input. 
+    It acts as a container for all form elements like text fields, checkboxes, and buttons.
+-->
+
+<!-- 2. <input> -->
+<!-- 
+    The <input> tag is used to create input fields where users can enter data.
+    Types of <input> include text, password, checkbox, radio, etc.
+    Example: <input type="text" name="username">
+-->
+
+<!-- 3. <label> -->
+<!-- 
+    The <label> tag defines a label for an <input> element.
+    It helps to associate text with form fields.
+    Example: <label for="username">Username:</label>
+-->
+
+<!-- 4. <button> -->
+<!-- 
+    The <button> tag creates a clickable button.
+    It can be used to submit the form or trigger actions.
+    Example: <button type="submit">Submit</button>
+-->
+
+<!-- 5. <select> -->
+<!-- 
+    The <select> tag creates a dropdown list.
+    Each option inside the list is defined using the <option> tag.
+    Example: 
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+-->
+
+<!-- 6. <textarea> -->
+<!-- 
+    The <textarea> tag creates a multi-line text input field.
+    Example: <textarea name="comments"></textarea>
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic HTML Form</title>
+</head>
+
+<body>
+
+    <h1>Simple Registration Form</h1>
+
+    <!-- Form starts here -->
+    <form action="/submit_form" method="POST">
+        <!-- Label and input for Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- Label and input for Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Dropdown for Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
+
+        <!-- Text area for Comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
